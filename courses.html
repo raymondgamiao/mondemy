@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondemy</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Icon Font Stylesheet -->
+    <script
+      src="https://kit.fontawesome.com/968057e630.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-sm px-md-5 px-1 sticky-top" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="images/mondemy_logo.png" height="35" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-center justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active" href="#">Courses</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="coursesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Resources
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                <li><a class="dropdown-item text-center" href="#">HTML</a></li>
+                <li><a class="dropdown-item text-center" href="#">CSS</a></li>
+                <li>
+                  <a class="dropdown-item text-center" href="#">Bootstrap</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-center" href="#">Javascript</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#" class="nav-link btn login_btn">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- container start -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2 p-0">
+          <div class="row m-0 p-3 sidebar">
+            <div class="col-12">
+              <a class="mt-5 pt-3 text-decoration-none text-dark" href="#"
+                ><h2>Courses</h2></a
+              >
+            </div>
+            <hr />
+            <div class="col-12 d-flex">
+              <ul
+                class="nav d-flex justify-content-between align-items-start flex-fill sidebar-content"
+              >
+                <li class="mb-1 list-unstyled">
+                  <a
+                    class="align-items-center"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#html-collapse"
+                    aria-expanded="false"
+                    href="#"
+                  >
+                    <i class="fa-solid fa-angle-right"></i>
+                    HTML
+                  </a>
+                  <div class="collapse" id="html-collapse">
+                    <ul class="btn-toggle-nav list-unstyled ps-3">
+                      <li><a href="#" class="">Introduction</a></li>
+                      <li><a href="#" class="">Forms</a></li>
+                      <li><a href="#" class="">Media</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1 list-unstyled">
+                  <a
+                    class="align-items-center"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#css-collapse"
+                    aria-expanded="false"
+                    href="#"
+                  >
+                    <i class="fa-solid fa-angle-right"></i>
+                    CSS
+                  </a>
+                  <div class="collapse" id="css-collapse">
+                    <ul class="btn-toggle-nav list-unstyled ps-3">
+                      <li><a href="#" class="">Introduction</a></li>
+                      <li><a href="#" class="">Advanced</a></li>
+                      <li><a href="#" class="">Responsive</a></li>
+                      <li><a href="#" class="">Grid</a></li>
+                      <li><a href="#" class="">Flex</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1 list-unstyled">
+                  <a
+                    class="align-items-center"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#bootstrap-collapse"
+                    aria-expanded="false"
+                    href="#"
+                  >
+                    <i class="fa-solid fa-angle-right"></i>
+                    Bootstrap
+                  </a>
+                  <div class="collapse" id="bootstrap-collapse">
+                    <ul class="btn-toggle-nav list-unstyled ps-3">
+                      <li><a href="#" class="">Getting Started</a></li>
+                      <li><a href="#" class="">Grid System</a></li>
+                      <li><a href="#" class="">Forms</a></li>
+                      <li><a href="#" class="">Components</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1 list-unstyled">
+                  <a
+                    class="align-items-center"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#javascript-collapse"
+                    aria-expanded="false"
+                    href="#"
+                  >
+                    <i class="fa-solid fa-angle-right"></i>
+                    Javascript
+                  </a>
+                  <div class="collapse" id="javascript-collapse">
+                    <ul class="btn-toggle-nav list-unstyled ps-3">
+                      <li><a href="#" class="">Introduction</a></li>
+                      <li><a href="#" class="">Loops</a></li>
+                      <li><a href="#" class="">bla bla</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- main content start -->
+        <div
+          class="col-12 col-md-8 border-start"
+          data-bs-spy="scroll"
+          data-bs-target="#course-spy"
+          data-bs-offset="0"
+          tabindex="0"
+        >
+          <div class="row m-0 p-3">
+            <!--<div class="col-12" id="breadcrumb">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Courses</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    HTML
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          -->
+            <div class="col-12" id="">
+              <h1>HTML</h1>
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/TDkLGZYv664"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p>HTML is the standard markup language for Web pages.</p>
+              <p>With HTML you can create your own Website.</p>
+              <p>HTML is easy to learn - You will enjoy it!</p>
+            </div>
+            <div class="col-12" id="introduction">
+              <h2>Introduction</h2>
+              <p>welcome bla bla bla</p>
+              <h3 id="subtopic1-1">sub topic 1</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum
+              </p>
+              <h3 id="subtopic1-2">sub topic 2</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum
+              </p>
+              <h3 id="subtopic1-3">sub topic 3</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum
+              </p>
+            </div>
+            <div class="col-12" id="introduction">
+              <h2>Forms</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum
+              </p>
+            </div>
+            <div class="col-12" id="introduction">
+              <h2>Media</h2>
+              <p>welcome bla bla bla</p>
+            </div>
+          </div>
+        </div>
+        <!-- main content end -->
+        <!-- scroll spy start -->
+        <div class="col col-md-2">
+          <nav
+            id="course-spy"
+            class="navbar navbar-light bg-white flex-column align-items-stretch ps-3 border-start"
+          >
+            <a class="navbar-brand" href="#">On this page</a>
+            <nav class="flex-column">
+              <a class="" href="#introduction">Introduction</a>
+              <nav class="nav flex-column">
+                <a class="ms-3" href="#subtopic1-1">Item 1-1</a>
+                <a class="ms-3" href="#subtopic1-2">Item 1-2</a>
+                <a class="ms-3" href="#subtopic1-3">Item 1-2</a>
+              </nav>
+              <a class="" href="#item-2">Item 2</a>
+            </nav>
+          </nav>
+        </div>
+        <!-- scroll spy end -->
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container-fluid -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

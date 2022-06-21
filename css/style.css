@@ -14,6 +14,9 @@
 .nav-item a:hover {
   color: #6c63ff;
 }
+.navbar-nav .nav-link.active {
+  color: #6c63ff;
+}
 .nav-item .dropdown-item:hover {
   background-color: white;
 }
@@ -79,4 +82,35 @@
 }
 .card-title {
   font-weight: 700;
+}
+.footer {
+  background-color: #0f1821;
+  color: white;
+}
+
+.sidebar {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 62px;
+}
+#course-spy {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 62px;
+}
+/*
+@media screen and (max-width: 990px) {
+  .sidebar {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 62px;
+  }
+}
+*/
+.sidebar-content li {
+  /*   min-width: 100px; */
+}
+.sidebar-content li a {
+  text-decoration: none;
+  color: #0f1821;
 }

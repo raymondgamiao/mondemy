@@ -33,7 +33,7 @@
   </head>
   <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-sm px-1 sticky-top" id="navbar">
+    <nav class="navbar navbar-expand-sm px-md-5 px-1 sticky-top" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img src="images/mondemy_logo.png" height="35" />
@@ -97,30 +97,19 @@
     <!-- container start -->
     <div class="container-fluid">
       <div class="row">
-        <!-- sidebar start-->
-        <div
-          class="col-lg-2 col-md-12 order-1 order-md-1 order-sm-1 sidebar bg-light shadowf"
-        >
-          <nav
-            class="navbar navbar-scroll navbar-expand-lg d-flex align-items-start flex-start flex-column sidebar"
-          >
-            <div class="align-self-start">
-              <a class="navbar-brand" href="#">Courses </a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#sidebar"
-                aria-controls="sidebar"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
+        <div class="col-lg-2 p-0">
+          <div class="row m-0 p-3 sidebar">
+            <div class="col-12">
+              <a class="mt-5 pt-3 text-decoration-none text-dark" href="#"
+                ><h2>Courses</h2></a
               >
-                <i class="fa-solid fa-angle-down"></i>
-              </button>
             </div>
-            <div class="collapse navbar-collapse align-self-start" id="sidebar">
-              <ul class="sidebar-content list-unstyled">
-                <li class="mb-1">
+            <hr />
+            <div class="col-12">
+              <ul
+                class="sidebar-content d-flex align-items-start justify-content-evenly flex-start flex-lg-column p-0"
+              >
+                <li class="mb-1 list-unstyled">
                   <a
                     class="align-items-center"
                     data-bs-toggle="collapse"
@@ -139,7 +128,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="mb-1">
+                <li class="mb-1 list-unstyled">
                   <a
                     class="align-items-center"
                     data-bs-toggle="collapse"
@@ -160,7 +149,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="mb-1">
+                <li class="mb-1 list-unstyled">
                   <a
                     class="align-items-center"
                     data-bs-toggle="collapse"
@@ -180,7 +169,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="mb-1">
+                <li class="mb-1 list-unstyled">
                   <a
                     class="align-items-center"
                     data-bs-toggle="collapse"
@@ -201,55 +190,67 @@
                 </li>
               </ul>
             </div>
-          </nav>
+          </div>
         </div>
-        <!-- sidebar end-->
-
         <!-- main content start -->
-        <main
-          class="col-lg-7 col-md-9 order-3 order-md-2 order-sm-3 pt-2 px-md-5 px-3 mainContent"
+        <div
+          class="col-12 col-md-8 border-start"
+          data-bs-spy="scroll"
+          data-bs-target="#course-spy"
+          data-bs-offset="0"
+          tabindex="0"
         >
-          <div
-            data-bs-spy="scroll"
-            data-bs-target="#tableOfContent"
-            data-bs-offset="0"
-            tabindex="0"
-          >
-            <h1>HTML</h1>
-            <p>
-              HTML (HyperText Markup Language) is the most basic building block
-              of the Web. It defines the meaning and structure of web content.
-              Other technologies besides HTML are generally used to describe a
-              web page's appearance/presentation (CSS) or functionality/behavior
-              (JavaScript).
-            </p>
-            <p>
-              "Hypertext" refers to links that connect web pages to one another,
-              either within a single website or between websites. Links are a
-              fundamental aspect of the Web. By uploading content to the
-              Internet and linking it to pages created by other people, you
-              become an active participant in the World Wide Web.
-            </p>
-
-            <div id="item-1" class="pt-5">
-              <h4 class="pt-4">Item 1</h4>
-              <p>
-                HTML (HyperText Markup Language) is the most basic building
-                block of the Web. It defines the meaning and structure of web
-                content. Other technologies besides HTML are generally used to
-                describe a web page's appearance/presentation (CSS) or
-                functionality/behavior (JavaScript).
-              </p>
-              <p>
-                "Hypertext" refers to links that connect web pages to one
-                another, either within a single website or between websites.
-                Links are a fundamental aspect of the Web. By uploading content
-                to the Internet and linking it to pages created by other people,
-                you become an active participant in the World Wide Web.
-              </p>
+          <div class="row m-0 p-3">
+            <!--<div class="col-12" id="breadcrumb">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Courses</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    HTML
+                  </li>
+                </ol>
+              </nav>
             </div>
-            <div id="item-2" class="pt-5">
-              <h4 class="pt-4">Item 2</h4>
+          -->
+            <div class="col-12" id="">
+              <h1>HTML</h1>
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/TDkLGZYv664"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p>HTML is the standard markup language for Web pages.</p>
+              <p>With HTML you can create your own Website.</p>
+              <p>HTML is easy to learn - You will enjoy it!</p>
+            </div>
+            <div class="col-12" id="introduction">
+              <h2>Introduction</h2>
+              <p>welcome bla bla bla</p>
+              <h3 id="subtopic1-1">sub topic 1</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum
+              </p>
+              <h3 id="subtopic1-2">sub topic 2</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum
+              </p>
+              <h3 id="subtopic1-3">sub topic 3</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -260,8 +261,8 @@
                 sunt in culpa qui officia deserunt mollit anim id est laborum
               </p>
             </div>
-            <div id="item-3" class="pt-5">
-              <h4 class="pt-4">Item 3</h4>
+            <div class="col-12" id="introduction">
+              <h2>Forms</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -271,29 +272,35 @@
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum
               </p>
+            </div>
+            <div class="col-12" id="introduction">
+              <h2>Media</h2>
+              <p>welcome bla bla bla</p>
             </div>
           </div>
-        </main>
+        </div>
         <!-- main content end -->
-
-        <!-- table of content scroll spy start -->
-        <aside
-          class="col-lg-3 col-md-3 order-2 order-md-3 order-sm-2 bg-white m-0 px-3"
-        >
+        <!-- scroll spy start -->
+        <div class="col col-md-2">
           <nav
-            id="tableOfContent"
-            class="navbar align-items-stretch tableOfContent p-0 m-0 flex-column"
+            id="course-spy"
+            class="navbar navbar-light bg-white flex-column align-items-stretch ps-3 border-start"
           >
-            <a class="navbar-brand" href="#">On this Page..</a>
-            <nav class="nav nav-pills flex-column">
-              <a class="nav-link m-0 ps-2" href="#item-1">Item 1</a>
-              <a class="nav-link m-0 ps-2" href="#item-2">Item 2</a>
-              <a class="nav-link m-0 ps-2" href="#item-3">Item 3</a>
+            <a class="navbar-brand" href="#">On this page</a>
+            <nav class="flex-column">
+              <a class="" href="#introduction">Introduction</a>
+              <nav class="nav flex-column">
+                <a class="ms-3" href="#subtopic1-1">Item 1-1</a>
+                <a class="ms-3" href="#subtopic1-2">Item 1-2</a>
+                <a class="ms-3" href="#subtopic1-3">Item 1-2</a>
+              </nav>
+              <a class="" href="#item-2">Item 2</a>
             </nav>
           </nav>
-        </aside>
-        <!-- table of content scroll spy end -->
+        </div>
+        <!-- scroll spy end -->
       </div>
+      <!-- end row -->
     </div>
     <!-- end container-fluid -->
 

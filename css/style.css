@@ -4,14 +4,14 @@
   font-family: "Montserrat", sans-serif;
 }
 /* navbar */
-.navbar {
+#navbar {
   background-color: #c5e0b4;
 }
-.navbar a {
+#navbar a {
   color: #3e3e3e;
   font-weight: 700;
 }
-.nav-item a:hover {
+#nav-item a:hover {
   color: #6c63ff;
 }
 .navbar-nav .nav-link.active {
@@ -91,12 +91,38 @@
 .sidebar {
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 62px;
+  top: 60px;
+  z-index: 2;
+  line-height: 2em;
+  height: auto;
 }
-#course-spy {
+.tableOfContent {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 62px;
+  z-index: 1;
+}
+.tableOfContent nav {
+  color: #3e3e3e;
+}
+.tableOfContent nav a {
+  color: #3e3e3e;
+}
+.tableOfContent .nav-pills .nav-link.active {
+  background-color: rgb(108, 99, 255, 0.5);
+  color: white;
+  border-left: solid 3px #6c63ff;
+  border-radius: 0;
+}
+.tableOfContent .nav-pills .nav-link:hover {
+  background-color: rgb(108, 99, 255, 0.5);
+  color: white;
+  border-left: solid 3px #6c63ff;
+  border-radius: 0;
+}
+.mainContent {
+  line-height: 2rem;
+  position: relative;
 }
 /*
 @media screen and (max-width: 990px) {

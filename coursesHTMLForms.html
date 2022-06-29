@@ -67,7 +67,9 @@
         >
           <ul class="navbar-nav mb-lg-0 align-items-center">
             <li class="nav-item dropdown">
-              <a class="nav-link active" href="courses.html">Courses</a>
+              <a class="nav-link active" href="coursesHTMLIntroduction.html"
+                >Courses</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -119,7 +121,7 @@
                 >
                   <img
                     src="images/testimonial3.jpg"
-                    alt="mdo"
+                    alt="profile picture"
                     width="32"
                     height="32"
                     class="rounded-circle"
@@ -129,6 +131,9 @@
                   class="dropdown-menu text-small shadow"
                   aria-labelledby="dropdownUser"
                 >
+                  <li>
+                    <a class="dropdown-item" href="dashboard.html">Dashboard</a>
+                  </li>
                   <li><a class="dropdown-item" href="#">Profile</a></li>
                   <li><a class="dropdown-item" href="#">Settings</a></li>
                   <li><hr class="dropdown-divider" /></li>
@@ -180,13 +185,14 @@
       <div class="row">
         <!-- sidebar start-->
         <div
-          class="col-lg-2 col-md-12 order-1 order-md-1 order-sm-1 sidebar bg-light shadowf"
+          class="col-lg-2 col-md-12 order-1 order-md-1 order-sm-1 sidebar bg-light shadow"
         >
           <nav
-            class="navbar navbar-scroll navbar-expand-lg d-flex align-items-start flex-start flex-column sidebar"
+            style="max-height: 100vh"
+            class="navbar navbar-nav-scroll navbar-expand-lg d-flex align-content-start flex-start flex-lg-column justify-content-start sidebar py-0"
           >
             <div class="align-self-start">
-              <a class="navbar-brand" href="#">Courses </a>
+              <a class="navbar-brand" href="courses.html">Courses </a>
               <button
                 class="navbar-toggler"
                 type="button"
@@ -199,23 +205,32 @@
                 <i class="fa-solid fa-angle-down"></i>
               </button>
             </div>
-            <div class="collapse navbar-collapse align-self-start" id="sidebar">
-              <ul class="sidebar-content list-unstyled">
-                <li class="mb-1">
+            <div
+              class="collapse navbar-collapse align-self-start align-items-start w-100"
+              id="sidebar"
+            >
+              <ul class="sidebar-content list-unstyled w-100">
+                <li class="mb-1 sidebarActiveCategory">
                   <a
                     class="align-items-center"
                     data-bs-toggle="collapse"
                     data-bs-target="#html-collapse"
-                    aria-expanded="false"
+                    aria-expanded="true"
                     href="#"
                   >
                     <i class="fa-solid fa-angle-right"></i>
                     HTML
                   </a>
                   <div class="collapse" id="html-collapse">
-                    <ul class="btn-toggle-nav list-unstyled ps-3">
-                      <li><a href="#" class="">Introduction</a></li>
-                      <li><a href="#" class="">Forms</a></li>
+                    <ul class="btn-toggle-nav list-unstyled ps-3 bg-light">
+                      <li class="">
+                        <a href="coursesHTMLIntroduction.html" class=""
+                          >Introduction</a
+                        >
+                      </li>
+                      <li class="sidebarActiveLink">
+                        <a href="coursesHTMLForms.html" class="">Forms</a>
+                      </li>
                       <li><a href="#" class="">Media</a></li>
                     </ul>
                   </div>
@@ -288,7 +303,7 @@
 
         <!-- main content start -->
         <main
-          class="col-lg-7 col-md-9 order-3 order-md-2 order-sm-3 pt-2 px-md-5 px-3 mainContent"
+          class="col-lg-7 col-md-9 order-3 order-md-2 order-sm-3 pt-2 px-md-5 px-3 pb-5 mainContent"
         >
           <div
             data-bs-spy="scroll"
@@ -296,62 +311,52 @@
             data-bs-offset="0"
             tabindex="0"
           >
-            <h1>HTML</h1>
-            <p>
-              HTML (HyperText Markup Language) is the most basic building block
-              of the Web. It defines the meaning and structure of web content.
-              Other technologies besides HTML are generally used to describe a
-              web page's appearance/presentation (CSS) or functionality/behavior
-              (JavaScript).
-            </p>
-            <p>
-              "Hypertext" refers to links that connect web pages to one another,
-              either within a single website or between websites. Links are a
-              fundamental aspect of the Web. By uploading content to the
-              Internet and linking it to pages created by other people, you
-              become an active participant in the World Wide Web.
-            </p>
+            <div class="py-5 py-sm-0">
+              <h1>HTML: Forms</h1>
 
-            <div id="item-1" class="pt-5">
-              <h4 class="pt-4">Item 1</h4>
               <p>
-                HTML (HyperText Markup Language) is the most basic building
-                block of the Web. It defines the meaning and structure of web
-                content. Other technologies besides HTML are generally used to
-                describe a web page's appearance/presentation (CSS) or
-                functionality/behavior (JavaScript).
+                The <code>&lt;form&gt;</code> HTML element represents a document
+                section containing interactive controls for submitting
+                information.
               </p>
               <p>
-                "Hypertext" refers to links that connect web pages to one
-                another, either within a single website or between websites.
-                Links are a fundamental aspect of the Web. By uploading content
-                to the Internet and linking it to pages created by other people,
-                you become an active participant in the World Wide Web.
+                An HTML form is used to collect user input. The user input is
+                most often sent to a server for processing.
               </p>
             </div>
-            <div id="item-2" class="pt-5">
-              <h4 class="pt-4">Item 2</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum
-              </p>
+            <div id="introduction" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">HTML: HyperText Markup Language</h2>
+              <figure>
+                <p>
+                  "Hypertext" refers to links that connect web pages to one
+                  another, either within a single website or between websites.
+                  Links are a fundamental aspect of the Web. By uploading
+                  content to the Internet and linking it to pages created by
+                  other people, you become an active participant in the World
+                  Wide Web.
+                </p>
+
+                <figcaption class="blockquote-footer">
+                  <cite title="Source Title"
+                    >developer.mozilla.org/en-US/docs/Web/HTML</cite
+                  >
+                </figcaption>
+              </figure>
             </div>
-            <div id="item-3" class="pt-5">
-              <h4 class="pt-4">Item 3</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum
-              </p>
+
+            <div id="basicStucture" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">Basic Stucture</h2>
+            </div>
+
+            <div id="HTMLEditors" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">HTML Editors</h2>
+            </div>
+
+            <div id="elements" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">Elements</h2>
+            </div>
+            <div id="attributes" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">Attributes</h2>
             </div>
           </div>
         </main>
@@ -366,10 +371,19 @@
             class="navbar align-items-stretch tableOfContent p-0 m-0 flex-column"
           >
             <a class="navbar-brand" href="#">On this Page..</a>
-            <nav class="nav nav-pills flex-column">
-              <a class="nav-link m-0 ps-2" href="#item-1">Item 1</a>
-              <a class="nav-link m-0 ps-2" href="#item-2">Item 2</a>
-              <a class="nav-link m-0 ps-2" href="#item-3">Item 3</a>
+            <nav
+              class="nav nav-pills flex-column p-3"
+              style="border-left: solid gray 1px"
+            >
+              <a class="nav-link m-0 ps-2 muted" href="#introduction"
+                >HTML: HyperText Markup Language
+              </a>
+              <a class="nav-link m-0 ps-2" href="#basicStucture"
+                >Basic Stucture</a
+              >
+              <a class="nav-link m-0 ps-2" href="#HTMLEditors">HTML Editors </a>
+              <a class="nav-link m-0 ps-2" href="#elements">Elements </a>
+              <a class="nav-link m-0 ps-2" href="#attributes">Attributes </a>
             </nav>
           </nav>
         </aside>

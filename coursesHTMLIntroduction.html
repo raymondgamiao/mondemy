@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondemy</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Icon Font Stylesheet -->
+    <script
+      src="https://kit.fontawesome.com/968057e630.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top px-0">
+      <nav class="navbar navbar-expand-md py-0 px-lg-3 px-3 py-2" id="navbar">
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand text-center" href="index.html">
+          <img
+            src="images/mondemy_logo.png"
+            alt=""
+            width="auto"
+            height="30"
+            class="d-inline-block"
+          />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#searchCollapse"
+        >
+          <span class=""><i class="fa-solid fa-magnifying-glass"></i></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse text-center justify-content-between"
+          id="navbarCollapse"
+        >
+          <ul class="navbar-nav mb-lg-0 align-items-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link active" href="coursesHTMLIntroduction.html"
+                >Courses</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="coursesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Resources
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                <li>
+                  <a class="dropdown-item text-center" href="ref-html.html"
+                    >HTML</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-center" href="ref-css.html"
+                    >CSS</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-center" href="ref-bootstrap.html"
+                    >Bootstrap</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-center"
+                    href="ref-javascript.html"
+                    >Javascript</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav mb-lg-0 align-items-center">
+            <li class="nav-item">
+              <div class="flex-shrink-0 dropdown me-md-3">
+                <a
+                  href="#"
+                  class="d-block link-dark text-decoration-none dropdown-toggle"
+                  id="dropdownUser"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="images/testimonial3.jpg"
+                    alt="profile picture"
+                    width="32"
+                    height="32"
+                    class="rounded-circle"
+                  />
+                </a>
+                <ul
+                  class="dropdown-menu text-small shadow"
+                  aria-labelledby="dropdownUser"
+                >
+                  <li>
+                    <a class="dropdown-item" href="dashboard.html">Dashboard</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="index.html">Sign out</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div
+                class="input-group me-md-2 flex-shrink w-auto d-none d-md-flex"
+              >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search"
+                  aria-label="Search"
+                  aria-describedby="searchIcon"
+                />
+                <span class="input-group-text purple"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div id="searchCollapse" class="collapse w-100 p-2">
+          <div class="input-group ms-md-3 flex-shrink w-auto">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search"
+              aria-label="Search"
+              aria-describedby="searchIcon"
+            />
+            <span class="input-group-text purple"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- container start -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- sidebar start-->
+        <div
+          class="col-lg-2 col-md-12 order-1 order-md-1 order-sm-1 sidebar bg-light shadow"
+        >
+          <nav
+            style="max-height: 100vh"
+            class="navbar navbar-nav-scroll navbar-expand-lg d-flex align-content-start flex-start flex-lg-column justify-content-start sidebar py-0"
+          >
+            <div class="align-self-start">
+              <a class="navbar-brand" href="courses.html">Courses </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#sidebar"
+                aria-controls="sidebar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+            </div>
+            <div
+              class="collapse navbar-collapse align-self-start align-items-start w-100"
+              id="sidebar"
+            >
+              <ul class="sidebar-content list-unstyled w-100">
+                <li class="mb-1 sidebarActiveCategory">
+                  <a
+                    class="align-items-center"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#html-collapse"
+                    aria-expanded="true"
+                    href="#"
+                  >
+                    <i class="fa-solid fa-angle-right"></i>
+                    HTML
+                  </a>
+                  <div class="collapse" id="html-collapse">
+                    <ul class="btn-toggle-nav list-unstyled ps-3 bg-light">
+                      <li class="sidebarActiveLink">
+                        <a href="coursesHTMLIntroduction.html" class=""
+                          >Introduction</a
+                        >
+                      </li>
+                      <li>
+                        <a href="coursesHTMLForms.html" class="">Forms</a>
+                      </li>
+                      <li><a href="#" class="">Media</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1">
+                  <a
+                    class="align-items-center"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#css-collapse"
+                    aria-expanded="false"
+                    href="#"
+                  >
+                    <i class="fa-solid fa-angle-right"></i>
+                    CSS
+                  </a>
+                  <div class="collapse" id="css-collapse">
+                    <ul class="btn-toggle-nav list-unstyled ps-3">
+                      <li><a href="#" class="">Introduction</a></li>
+                      <li><a href="#" class="">Advanced</a></li>
+                      <li><a href="#" class="">Responsive</a></li>
+                      <li><a href="#" class="">Grid</a></li>
+                      <li><a href="#" class="">Flex</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1">
+                  <a
+                    class="align-items-center"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#bootstrap-collapse"
+                    aria-expanded="false"
+                    href="#"
+                  >
+                    <i class="fa-solid fa-angle-right"></i>
+                    Bootstrap
+                  </a>
+                  <div class="collapse" id="bootstrap-collapse">
+                    <ul class="btn-toggle-nav list-unstyled ps-3">
+                      <li><a href="#" class="">Getting Started</a></li>
+                      <li><a href="#" class="">Grid System</a></li>
+                      <li><a href="#" class="">Forms</a></li>
+                      <li><a href="#" class="">Components</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1">
+                  <a
+                    class="align-items-center"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#javascript-collapse"
+                    aria-expanded="false"
+                    href="#"
+                  >
+                    <i class="fa-solid fa-angle-right"></i>
+                    Javascript
+                  </a>
+                  <div class="collapse" id="javascript-collapse">
+                    <ul class="btn-toggle-nav list-unstyled ps-3">
+                      <li><a href="#" class="">Introduction</a></li>
+                      <li><a href="#" class="">Loops</a></li>
+                      <li><a href="#" class="">bla bla</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- sidebar end-->
+
+        <!-- main content start -->
+        <main
+          class="col-lg-7 col-md-9 order-3 order-md-2 order-sm-3 pt-2 px-md-5 px-3 pb-5 mainContent"
+        >
+          <div
+            data-bs-spy="scroll"
+            data-bs-target="#tableOfContent"
+            data-bs-offset="0"
+            tabindex="0"
+          >
+            <div class="py-5 py-sm-0">
+              <h1>Introduction to HTML</h1>
+              <figure>
+                <p>
+                  HTML (HyperText Markup Language) is the most basic building
+                  block of the Web. It defines the meaning and structure of web
+                  content. Other technologies besides HTML are generally used to
+                  describe a web page's appearance/presentation (CSS) or
+                  functionality/behavior (JavaScript).
+                </p>
+
+                <figcaption class="blockquote-footer">
+                  <cite title="Source Title"
+                    >developer.mozilla.org/en-US/docs/Web/HTML</cite
+                  >
+                </figcaption>
+              </figure>
+            </div>
+            <div id="introduction" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">HTML: HyperText Markup Language</h2>
+              <figure>
+                <p>
+                  "Hypertext" refers to links that connect web pages to one
+                  another, either within a single website or between websites.
+                  Links are a fundamental aspect of the Web. By uploading
+                  content to the Internet and linking it to pages created by
+                  other people, you become an active participant in the World
+                  Wide Web.
+                </p>
+                <p>
+                  HTML uses "markup" to annotate text, images, and other content
+                  for display in a Web browser. HTML markup includes special
+                  "elements" such as
+                  <code>
+                    &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;header&gt;,
+                    &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, &lt;p&gt;,
+                    &lt;div&gt;, &lt;span&gt;, &lt;img&gt;, &lt;aside&gt;,
+                    &lt;audio&gt;, &lt;canvas&gt;, &lt;datalist&gt;,
+                    &lt;details&gt;, &lt;embed&gt;, &lt;nav&gt;, &lt;output&gt;,
+                    &lt;progress&gt;, &lt;video&gt;, &lt;ul&gt;, &lt;ol&gt;,
+                    &lt;li&gt;
+                  </code>
+                  and many others.
+                </p>
+                <p>
+                  An HTML element is set off from other text in a document by
+                  "tags", which consist of the element name surrounded by "&lt;"
+                  and "&gt;". The name of an element inside a tag is case
+                  insensitive. That is, it can be written in uppercase,
+                  lowercase, or a mixture. For example, the &lt;title&gt; tag
+                  can be written as &lt;Title&gt;, &lt;TITLE&gt;, or in any
+                  other way. However, the convention and recommended practice is
+                  to write tags in lowercase.
+                </p>
+
+                <figcaption class="blockquote-footer">
+                  <cite title="Source Title"
+                    >developer.mozilla.org/en-US/docs/Web/HTML</cite
+                  >
+                </figcaption>
+              </figure>
+            </div>
+
+            <div id="basicStucture" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">Basic Stucture</h2>
+              <div class="mx-auto text-center row">
+                <div class="col-lg-6 p-3">
+                  <img
+                    src="images/basicStuctureCode.jpg"
+                    alt=""
+                    class="img-fluid w-100"
+                  />
+                </div>
+                <div class="col-lg-6 p-3">
+                  <img
+                    src="images/basicStuctureVisual.jpg"
+                    alt=""
+                    class="img-fluid w-100"
+                  />
+                </div>
+              </div>
+              <div>
+                <p>
+                  These tags should be placed underneath each other at the top
+                  of every HTML page that you create:
+                </p>
+                <ul>
+                  <li>
+                    <code> &lt;!DOCTYPE html&gt; </code>
+                    — declaration defines that this document is an HTML5
+                    document
+                  </li>
+                  <li>
+                    <code> &lt;html&gt; </code>
+                    — element is the root element of an HTML page
+                  </li>
+                  <li>
+                    <code> &lt;head&gt; </code>
+                    — element contains meta information about the HTML page
+                  </li>
+                  <li>
+                    <code> &lt;body&gt; </code>
+                    element defines the document's body, and is a container for
+                    all the visible contents, such as headings, paragraphs,
+                    images, hyperlinks, tables, lists, etc.
+                  </li>
+                </ul>
+                <p>Other commonly used tags:</p>
+                <ul>
+                  <li>
+                    <code>&lt;title&gt;</code> — element specifies a title for
+                    the HTML page (which is shown in the browser's title bar or
+                    in the page's tab)
+                  </li>
+                  <li>
+                    <code>&lt;h1&gt;</code> — element defines a large heading
+                  </li>
+                  <li><code>&lt;p&gt;</code> — element defines a paragraph</li>
+                </ul>
+                <p>
+                  For a complete list of all HTML tags, check out this HTML
+                  element <a href="#">cheatsheet</a>
+                </p>
+              </div>
+            </div>
+
+            <div id="HTMLEditors" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">HTML Editors</h2>
+              <div>
+                <p>
+                  Web pages can be created and modified by using a simple text
+                  editor like Notepad for Windows and TextEdit for Mac.
+                </p>
+                <p>
+                  However, there are softwares called Integrated Development
+                  Environment (IDE), that combines features and tools needed by
+                  developers.
+                </p>
+                <p>Some popular examples are:</p>
+                <ul>
+                  <li>Visual Studio Code</li>
+                  <li>Sublime Text</li>
+                  <li>Atom</li>
+                  <li>Notepad++</li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="elements" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">Elements</h2>
+              <div>
+                <p>
+                  Now that you know how to make the basic structure of a
+                  webpage, and have the tools to edit it, let's start adding
+                  content to your web page!
+                </p>
+                <p>
+                  Take a look at these commonly used tags we'll be using in the
+                  next lessons.
+                </p>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Tag</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>&lt;a&gt;</td>
+                      <td>Defines a hyperlink</td>
+                    </tr>
+                    <tr>
+                      <td>&lt;b&gt;</td>
+                      <td>Defines bold text</td>
+                    </tr>
+                    <tr>
+                      <td>&lt;br&gt;</td>
+                      <td>Defines a single line break</td>
+                    </tr>
+                    <tr>
+                      <td>&lt;button&gt;</td>
+                      <td>Defines a clickable button</td>
+                    </tr>
+                    <tr>
+                      <td>&lt;div&gt;</td>
+                      <td>Defines a section in a document</td>
+                    </tr>
+                    <tr>
+                      <td>&lt;em&gt;</td>
+                      <td>Defines emphasized text</td>
+                    </tr>
+                    <tr>
+                      <td>&lt;form&gt;</td>
+                      <td>Defines an HTML form for user input</td>
+                    </tr>
+                    <tr>
+                      <td>&lt;h1&gt;-&lt;h6&gt;</td>
+                      <td>Defines HTML headings</td>
+                    </tr>
+                    <tr>
+                      <td>&lt;img&gt;</td>
+                      <td>Defines an image</td>
+                    </tr>
+                    <tr>
+                      <td>&lt;input&gt;</td>
+                      <td>Defines an input control</td>
+                    </tr>
+                    <tr>
+                      <td>&lt;ol&gt;</td>
+                      <td>Defines an ordered list</td>
+                    </tr>
+                    <tr>
+                      <td>&lt;option&gt;</td>
+                      <td>Defines an option in a drop-down list</td>
+                    </tr>
+                    <tr>
+                      <td>&lt;p&gt;</td>
+                      <td>Defines a paragraph</td>
+                    </tr>
+                    <tr>
+                      <td>&lt;table&gt;</td>
+                      <td>Defines a table</td>
+                    </tr>
+                    <tr>
+                      <td>&lt;td&gt;</td>
+                      <td>Defines a cell in a table</td>
+                    </tr>
+                    <tr>
+                      <td>&lt;tr&gt;</td>
+                      <td>Defines a row in a table</td>
+                    </tr>
+                    <tr>
+                      <td>&lt;ul&gt;</td>
+                      <td>Defines an unordered list</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div id="attributes" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">Attributes</h2>
+              <div>
+                <p>
+                  Attributes contain extra information about the element that
+                  won't appear in the content.
+                </p>
+                <ul>
+                  <li>All HTML elements can have attributes</li>
+                  <li>
+                    Attributes provide additional information about elements
+                  </li>
+                  <li>Attributes are always specified in the start tag</li>
+                  <li>
+                    Attributes usually come in name/value pairs like:
+                    name="value"
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- main content end -->
+
+        <!-- table of content scroll spy start -->
+        <aside
+          class="col-lg-3 col-md-3 order-2 order-md-3 order-sm-2 bg-white m-0 px-3"
+        >
+          <nav
+            id="tableOfContent"
+            class="navbar align-items-stretch tableOfContent p-0 m-0 flex-column"
+          >
+            <a class="navbar-brand" href="#">On this Page..</a>
+            <nav
+              class="nav nav-pills flex-column p-3"
+              style="border-left: solid gray 1px"
+            >
+              <a class="nav-link m-0 ps-2 muted" href="#introduction"
+                >HTML: HyperText Markup Language
+              </a>
+              <a class="nav-link m-0 ps-2" href="#basicStucture"
+                >Basic Stucture</a
+              >
+              <a class="nav-link m-0 ps-2" href="#HTMLEditors">HTML Editors </a>
+              <a class="nav-link m-0 ps-2" href="#elements">Elements </a>
+              <a class="nav-link m-0 ps-2" href="#attributes">Attributes </a>
+            </nav>
+          </nav>
+        </aside>
+        <!-- table of content scroll spy end -->
+      </div>
+    </div>
+    <!-- end container-fluid -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

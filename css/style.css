@@ -59,7 +59,7 @@
   font-size: 1.25em;
 }
 .purple {
-  color: #6c63ff;
+  color: #6c63ff !important;
 }
 .white {
   color: white;
@@ -178,7 +178,22 @@
   background-color: #0f1821;
   color: white;
 }
+/* dashboard */
+.loadMoreBtn {
+  border: solid 1px #6c63ff;
+  background-color: #6c63ff;
+  border-radius: 0.375rem;
+  color: white;
+  font-weight: 700;
+}
+.loadMoreBtn:hover {
+  border: solid 1px #6c63ff;
+  background-color: white;
+  border-radius: 0.375rem;
+  color: #6c63ff;
+}
 
+/* courses */
 .sidebar {
   position: -webkit-sticky; /* Safari */
   position: sticky;
@@ -198,6 +213,8 @@
 }
 .tableOfContent nav a {
   color: #3e3e3e;
+  font-weight: 500;
+  line-height: 1rem;
 }
 .tableOfContent .nav-pills .nav-link.active {
   background-color: rgb(108, 99, 255, 0.5);
@@ -215,6 +232,19 @@
   line-height: 2rem;
   position: relative;
 }
+.sidebar-content li a {
+  text-decoration: none;
+  color: #0f1821;
+}
+.sidebarActiveCategory {
+  background-color: rgb(108, 99, 255, 0.5);
+  color: white;
+  border-left: solid 3px #6c63ff;
+  border-radius: 0;
+}
+.sidebar-content .sidebarActiveLink a {
+  color: #6c63ff;
+}
 /*
 @media screen and (max-width: 990px) {
   .sidebar {
@@ -224,10 +254,6 @@
   }
 }
 */
-.sidebar-content li a {
-  text-decoration: none;
-  color: #0f1821;
-}
 
 /* loader */
 .loader {

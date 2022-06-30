@@ -225,7 +225,7 @@
                   </a>
                   <div class="collapse" id="html-collapse">
                     <ul class="btn-toggle-nav list-unstyled ps-3 bg-light">
-                      <li class="sidebarActiveLink">
+                      <li class="">
                         <a href="coursesHTMLIntroduction.html" class=""
                           >Introduction</a
                         >
@@ -233,7 +233,7 @@
                       <li>
                         <a href="coursesHTMLForms.html" class="">Forms</a>
                       </li>
-                      <li>
+                      <li class="sidebarActiveLink">
                         <a href="coursesHTMLSemantics.html" class=""
                           >Semantics</a
                         >
@@ -318,274 +318,93 @@
             tabindex="0"
           >
             <div class="py-5 py-sm-0">
-              <h1>Introduction to HTML</h1>
-              <figure>
-                <p>
-                  HTML stands for HyperText Markup Language. It is a markup
-                  language that is the most basic building block of the Web. It
-                  helps browsers understand the structure and style of a
-                  website. HTML consists of a series of elements such as
-                  <code>&lt;img&gt;</code> to show images, and
-                  <code>&lt;p&gt;</code> to show paragraphs. You will learn all
-                  about these elements as you go along this course.
-                </p>
-                <p>
-                  HTML is usually assisted by other technologies to define it's
-                  elements visual appearance (<a href="">CSS</a>) and
-                  functionality (<a href="">Javascript</a>)
-                </p>
-              </figure>
-            </div>
-            <div id="introduction" class="pt-5">
-              <h2 class="pt-5 pt-lg-0 mt-3">HTML Elements</h2>
+              <h1>HTML: Semantics</h1>
               <p>
-                "Tags," which consist of the element name enclosed by "&lt;" and
-                "&gt;", are used to distinguish HTML elements from other content
-                in a page. Case is not relevant when naming an element inside a
-                tag. In other words, it can be written in uppercase, lowercase,
-                or a combination of the two. <code>&lt;title&gt;</code> tag, for
-                instance, can be expressed in a variety of ways, such as
-                <code>&lt;Title&gt;</code> or <code>&lt;TITLE&gt;</code>. Tags
-                however, should be written in lowercase, as is customary and
-                advised.
+                In programming, Semantics refers to the meaning of a piece of
+                code — for example "what effect does running that line of
+                JavaScript have?", or "what purpose or role does that HTML
+                element have" (rather than "what does it look like?".)
               </p>
               <p>
-                HTML uses "markup" to annotate text, images, and other content
-                for display in a Web browser. HTML markup includes special
-                "elements" such as
-                <code>
-                  &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;header&gt;,
-                  &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, &lt;p&gt;,
-                  &lt;div&gt;, &lt;span&gt;, &lt;img&gt;, &lt;aside&gt;,
-                  &lt;audio&gt;, &lt;canvas&gt;, &lt;datalist&gt;,
-                  &lt;details&gt;, &lt;embed&gt;, &lt;nav&gt;, &lt;output&gt;,
-                  &lt;progress&gt;, &lt;video&gt;, &lt;ul&gt;, &lt;ol&gt;,
-                  &lt;li&gt;
-                </code>
-                and many others.
+                In HTML, for example, the &lt;h1&gt; element is a semantic
+                element, which gives the text it wraps around the role (or
+                meaning) of "a top level heading on your page."
+              </p>
+              <figcaption class="blockquote-footer">
+                <cite title="Source Title"
+                  >developer.mozilla.org/en-US/docs/Glossary/Semantics</cite
+                >
+              </figcaption>
+            </div>
+            <div id="semanticsBenefit" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">Benefits of Semantics</h2>
+              <ul>
+                <li>
+                  Search engines will consider its contents as important
+                  keywords to influence the page's search rankings (see SEO)
+                </li>
+                <li>
+                  Screen readers can use it as a signpost to help visually
+                  impaired users navigate a page
+                </li>
+                <li>
+                  Finding blocks of meaningful code is significantly easier than
+                  searching through endless divs with or without semantic or
+                  namespaced classes
+                </li>
+                <li>
+                  Suggests to the developer the type of data that will be
+                  populated
+                </li>
+                <li>
+                  Semantic naming mirrors proper custom element/component naming
+                </li>
+                <p>rephrase this</p>
+              </ul>
+            </div>
+
+            <div id="semanticsList" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">
+                Exercise: Build a website with semantics
+              </h2>
+              <p>konting bla ba</p>
+              <ul>
+                <li>&lt;article&gt;</li>
+                <li>&lt;aside&gt;</li>
+                <li>&lt;details&gt;</li>
+                <li>&lt;figcaption&gt;</li>
+                <li>&lt;figure&gt;</li>
+                <li>&lt;footer&gt;</li>
+                <li>&lt;header&gt;</li>
+                <li>&lt;main&gt;</li>
+                <li>&lt;mark&gt;</li>
+                <li>&lt;nav&gt;</li>
+                <li>&lt;section&gt;</li>
+                <li>&lt;summary&gt;</li>
+                <li>&lt;time&gt;</li>
+              </ul>
+
+              <p>
+                for further reading punta ka
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantic_elements"
+                  >dito</a
+                >
               </p>
             </div>
 
-            <div id="basicStucture" class="pt-5">
-              <h2 class="pt-5 pt-lg-0 mt-3">Basic Stucture</h2>
-              <div class="mx-auto text-center row">
-                <div class="col-lg-6 p-3">
-                  <img
-                    src="images/basicStuctureCode.jpg"
-                    alt=""
-                    class="img-fluid w-100"
-                  />
-                </div>
-                <div class="col-lg-6 p-3">
-                  <img
-                    src="images/basicStuctureVisual.jpg"
-                    alt=""
-                    class="img-fluid w-100"
-                  />
-                </div>
-              </div>
-              <div>
-                <p>
-                  Now let us create your very first html file. Open a notepad if
-                  you are using Windows, or TextEdit if using Mac, then copy the
-                  code from the image above.
-                </p>
-                <p>
-                  These tags should be placed underneath each other at the top
-                  of every HTML page that you create:
-                </p>
-                <ul>
-                  <li>
-                    <code> &lt;!DOCTYPE html&gt; </code>
-                    — declaration defines that this document is an HTML5
-                    document
-                  </li>
-                  <li>
-                    <code> &lt;html&gt; </code>
-                    — element is the root element of an HTML page
-                  </li>
-                  <li>
-                    <code> &lt;head&gt; </code>
-                    — element contains meta information about the HTML page
-                  </li>
-                  <li>
-                    <code> &lt;body&gt; </code>
-                    element defines the document's body, and is a container for
-                    all the visible contents, such as headings, paragraphs,
-                    images, hyperlinks, tables, lists, etc.
-                  </li>
-                </ul>
-                <p>Other commonly used tags:</p>
-                <ul>
-                  <li>
-                    <code>&lt;title&gt;</code> — element specifies a title for
-                    the HTML page (which is shown in the browser's title bar or
-                    in the page's tab)
-                  </li>
-                  <li>
-                    <code>&lt;h1&gt;</code> — element defines a large heading
-                  </li>
-                  <li><code>&lt;p&gt;</code> — element defines a paragraph</li>
-                </ul>
-                <p>
-                  For a complete list of all HTML tags, check out this HTML
-                  element <a href="#">cheatsheet</a>
-                </p>
-                <p>
-                  Remember most elements have opening and closing tags.
-                  &lt;h1&gt; (which means heading 1) for example should be
-                  closed with &lt;/h1&gt; and put the text in between these
-                  tags.
-                </p>
-                <p>
-                  Once you are done copying the code, save your file as "My
-                  first website.html" then open it on your favorite web browser.
-                  Congrats!
-                </p>
-              </div>
-            </div>
-
-            <div id="HTMLEditors" class="pt-5">
-              <h2 class="pt-5 pt-lg-0 mt-3">HTML Editors</h2>
-              <div>
-                <p>
-                  Web pages can be created and modified by using a simple text
-                  editor like Notepad for Windows and TextEdit for Mac.
-                </p>
-                <p>
-                  However, there are softwares called Integrated Development
-                  Environment (IDE), that combines features and tools needed by
-                  developers.
-                </p>
-                <p>Some popular examples are:</p>
-                <ul>
-                  <li>Visual Studio Code</li>
-                  <li>Sublime Text</li>
-                  <li>Atom</li>
-                  <li>Notepad++</li>
-                </ul>
-              </div>
-            </div>
-
-            <div id="elements" class="pt-5">
-              <h2 class="pt-5 pt-lg-0 mt-3">Elements</h2>
-              <div>
-                <p>
-                  Now that you know how to make the basic structure of a
-                  webpage, and have the tools to edit it, let's start adding
-                  content to your web page!
-                </p>
-                <p>
-                  Take a look at these commonly used tags we'll be using in the
-                  next lessons.
-                </p>
-                <table class="table table-striped">
-                  <thead>
-                    <tr>
-                      <th scope="col">Tag</th>
-                      <th scope="col">Description</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>&lt;a&gt;</td>
-                      <td>Defines a hyperlink</td>
-                    </tr>
-                    <tr>
-                      <td>&lt;b&gt;</td>
-                      <td>Defines bold text</td>
-                    </tr>
-                    <tr>
-                      <td>&lt;br&gt;</td>
-                      <td>Defines a single line break</td>
-                    </tr>
-                    <tr>
-                      <td>&lt;button&gt;</td>
-                      <td>Defines a clickable button</td>
-                    </tr>
-                    <tr>
-                      <td>&lt;div&gt;</td>
-                      <td>Defines a section in a document</td>
-                    </tr>
-                    <tr>
-                      <td>&lt;em&gt;</td>
-                      <td>Defines emphasized text</td>
-                    </tr>
-                    <tr>
-                      <td>&lt;form&gt;</td>
-                      <td>Defines an HTML form for user input</td>
-                    </tr>
-                    <tr>
-                      <td>&lt;h1&gt;-&lt;h6&gt;</td>
-                      <td>Defines HTML headings</td>
-                    </tr>
-                    <tr>
-                      <td>&lt;img&gt;</td>
-                      <td>Defines an image</td>
-                    </tr>
-                    <tr>
-                      <td>&lt;input&gt;</td>
-                      <td>Defines an input control</td>
-                    </tr>
-                    <tr>
-                      <td>&lt;ol&gt;</td>
-                      <td>Defines an ordered list</td>
-                    </tr>
-                    <tr>
-                      <td>&lt;option&gt;</td>
-                      <td>Defines an option in a drop-down list</td>
-                    </tr>
-                    <tr>
-                      <td>&lt;p&gt;</td>
-                      <td>Defines a paragraph</td>
-                    </tr>
-                    <tr>
-                      <td>&lt;table&gt;</td>
-                      <td>Defines a table</td>
-                    </tr>
-                    <tr>
-                      <td>&lt;td&gt;</td>
-                      <td>Defines a cell in a table</td>
-                    </tr>
-                    <tr>
-                      <td>&lt;tr&gt;</td>
-                      <td>Defines a row in a table</td>
-                    </tr>
-                    <tr>
-                      <td>&lt;ul&gt;</td>
-                      <td>Defines an unordered list</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <figcaption class="figure-caption">
-                  https://www.w3schools.com/tags/default.asp
-                </figcaption>
-              </div>
-            </div>
-            <div id="attributes" class="pt-5">
-              <h2 class="pt-5 pt-lg-0 mt-3">Attributes</h2>
-              <div>
-                <p>
-                  Attributes contain extra information about the element that
-                  won't appear in the content.
-                </p>
-                <ul>
-                  <li>All HTML elements can have attributes</li>
-                  <li>
-                    Attributes provide additional information about elements
-                  </li>
-                  <li>Attributes are always specified in the start tag</li>
-                  <li>
-                    Attributes usually come in name/value pairs like:
-                    name="value"
-                  </li>
-                </ul>
-              </div>
+            <div id="example" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3 pb-3">
+                Excersize: Build your own website
+              </h2>
+              <p>ngayon na natutunan mo na basics gawa tayo website</p>
+              <p>picture na gagayahin</p>
+              <p>code along</p>
             </div>
           </div>
-          <div class="d-flex justify-content-end py-5">
+          <div class="d-flex justify-content-start py-5">
             <a class="btn signup_btn" href="coursesHTMLForms.html">
-              Next Topic
+              Previous Topic
             </a>
           </div>
         </main>
@@ -604,15 +423,15 @@
               class="nav nav-pills flex-column p-3"
               style="border-left: solid gray 1px"
             >
-              <a class="nav-link m-0 ps-2 muted" href="#introduction"
-                >HTML Elements
+              <a class="nav-link m-0 ps-2 muted" href="#semanticsBenefit"
+                >Benefits of Semantics
               </a>
-              <a class="nav-link m-0 ps-2" href="#basicStucture"
-                >Basic Stucture</a
+              <a class="nav-link m-0 ps-2" href="#semanticsList"
+                >Semantics Example</a
               >
-              <a class="nav-link m-0 ps-2" href="#HTMLEditors">HTML Editors </a>
-              <a class="nav-link m-0 ps-2" href="#elements">Elements </a>
-              <a class="nav-link m-0 ps-2" href="#attributes">Attributes </a>
+              <a class="nav-link m-0 ps-2" href="#example"
+                >Exercise: Build a website with semantics</a
+              >
             </nav>
           </nav>
         </aside>

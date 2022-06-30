@@ -70,6 +70,7 @@
   font-size: x-small;
 }
 .signup_btn {
+  color: white;
   background-color: #6c63ff;
   border: solid 1px #6c63ff;
 }
@@ -205,9 +206,16 @@
 .tableOfContent {
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 62px;
+  top: 58px;
   z-index: 1;
 }
+
+@media screen and (max-width: 990px) {
+  .tableOfContent {
+    top: 92px;
+  }
+}
+
 .tableOfContent nav {
   color: #3e3e3e;
 }

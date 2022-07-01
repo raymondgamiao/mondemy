@@ -212,12 +212,12 @@
               id="sidebar"
             >
               <ul class="sidebar-content list-unstyled w-100">
-                <li class="mb-1 sidebarActiveCategory">
+                <li class="mb-1">
                   <a
                     class="align-items-center"
                     data-bs-toggle="collapse"
                     data-bs-target="#html-collapse"
-                    aria-expanded="true"
+                    aria-expanded="false"
                     href="#"
                   >
                     <i class="fa-solid fa-angle-right"></i>
@@ -233,7 +233,7 @@
                       <li>
                         <a href="coursesHTMLForms.html" class="">Forms</a>
                       </li>
-                      <li class="sidebarActiveLink">
+                      <li>
                         <a href="coursesHTMLSemantics.html" class=""
                           >Semantics</a
                         >
@@ -241,7 +241,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="mb-1">
+                <li class="mb-1 sidebarActiveCategory">
                   <a
                     class="align-items-center"
                     data-bs-toggle="collapse"
@@ -254,7 +254,9 @@
                   </a>
                   <div class="collapse" id="css-collapse">
                     <ul class="btn-toggle-nav list-unstyled ps-3">
-                      <li><a href="#" class="">Introduction</a></li>
+                      <li>
+                        <a href="#" class="sidebarActiveLink">Introduction</a>
+                      </li>
                       <li><a href="#" class="">Advanced</a></li>
                       <li><a href="#" class="">Responsive</a></li>
                       <li><a href="#" class="">Grid</a></li>
@@ -318,164 +320,80 @@
             tabindex="0"
           >
             <div class="py-5 py-sm-0">
-              <h1>HTML: Semantics</h1>
+              <h1>CSS: Introduction</h1>
               <p>
-                According to the dictionary, semantics means - "the branch of
-                linguistics and logic concerned with meaning". In HTML,
-                Semantics refers to elements that clearly describe their meaning
-                in a way that is unsderstood clearly by both human and machine.
-              </p>
-              <p>
-                For example the tag <code>&lt;article&gt;</code> specifies
-                independent, self-contained content. It can be used when
-                creating a blog or forum post, newspaper article, or other
-                similar content.
+                In the HTML course, we have learned how to create the structure
+                of a webpage. On this course, we will be discussing how to give
+                visual style to your HTML elements using CSS
               </p>
             </div>
-            <div id="semanticsBenefit" class="pt-5">
-              <h2 class="pt-5 pt-lg-0 mt-3">Benefits of Semantics</h2>
-              <ul>
-                <li>
-                  Its contents will be taken into account by search engines as
-                  keywords to affect the page's search rankings
-                </li>
-                <li>
-                  It can be used as a guide by screen readers to aid users who
-                  are blind in navigating a page.
-                </li>
-                <li>
-                  Finding meaningful sections of code is much simpler than
-                  sifting through countless divs, whether or whether they have
-                  semantic or namespaced classes.
-                </li>
-                <li>
-                  Suggests to the developer the type of data that will be
-                  populated
-                </li>
-              </ul>
+            <div id="CSSDefinition" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">What is CSS</h2>
+              <p>
+                CSS stands for Cascading Style Sheets. It describes how HTML
+                elements are to be displayed including the design, layout and
+                variations in display for different devices and screen sizes.
+              </p>
+              <p>
+                Take a look at this block of code. We have here a paragraph and
+                a CSS code
+              </p>
+              <code
+                >&lt;style&gt;<br />
+                p {color: blue; background-color:gray;} <br />
+                &lt;/style&gt; </code
+              ><br />
+              <code>&lt;p&gt;Sample Text&lt;/p&gt;</code><br /><br />
+
+              <p>This is how it would look like.</p>
+              <p style="color: blue; background-color: gray">Sample Text</p>
             </div>
 
-            <div id="semanticsList" class="pt-5">
-              <h2 class="pt-5 pt-lg-0 mt-3">Examples of Semantics</h2>
-              <p>The semantic elements in HTML5 are:</p>
+            <div id="addingCSS" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">Adding CSS</h2>
+              <p>There are 3 ways to insert a CSS.</p>
               <ul>
                 <li>
-                  <code>&lt;article&gt;</code> - independent, self-contained
-                  content
+                  External
+                  <p>
+                    You need to create a .css file and add a link inside you
+                    HTML head using: <br />
+                    <code
+                      >&lt;link rel="stylesheet" href="filename.css"&gt;</code
+                    >
+                  </p>
                 </li>
                 <li>
-                  <code>&lt;aside&gt;</code> - content aside from the page
-                  content
+                  Internal
+                  <p>
+                    The example above is an internal CSS. The
+                    <code>&lt;style&gt; &lt;/style&gt; </code> is inserted
+                    inside the HTML head, and the css is inserted inside the
+                    style element
+                  </p>
                 </li>
                 <li>
-                  <code>&lt;details&gt;</code> - additional details that the
-                  user can view or hide
+                  Inline
+                  <p>
+                    Inline styles are defined within the "style" attribute of
+                    the relevant element. For example: <br />
+                    <code
+                      >&lt;p style='color: blue;
+                      background-color:gray;'&gt;Sample Text&lt;/p&gt;</code
+                    >
+                  </p>
                 </li>
-                <li>
-                  <code> &lt;figcaption&gt;</code> - a caption for a
-                  <code>&lt;figure&gt;</code> element
-                </li>
-                <li>
-                  <code>&lt;figure&gt;</code> - self-contained content, like
-                  illustrations, diagrams, photos, code listings, etc.
-                </li>
-                <li>
-                  <code>&lt;footer&gt;</code> - a footer for a document or
-                  section
-                </li>
-                <li>
-                  <code>&lt;header&gt;</code> - a header for a document or
-                  section
-                </li>
-                <li>
-                  <code>&lt;main&gt;</code> - the main content of a document
-                </li>
-                <li><code>&lt;mark&gt;</code> - marked/highlighted text</li>
-                <li><code>&lt;nav&gt;</code> - navigation links</li>
-                <li><code>&lt;section&gt;</code> - a section in a document</li>
-                <li>
-                  <code>&lt;summary&gt;</code> - a visible heading for a
-                  <code>&lt;details&gt;</code>
-                  element
-                </li>
-                <li><code>&lt;time&gt;</code> - a date/time</li>
               </ul>
-
-              <p>
-                For further reading, you can check out:
-                <a
-                  href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantic_elements"
-                  target="_blank"
-                  >mdn web docs</a
-                >
-              </p>
             </div>
 
             <div id="example" class="pt-5">
               <h2 class="pt-5 pt-lg-0 mt-3 pb-3">
                 Excersize: Build your own website
               </h2>
-              <p>
-                Time to put what you've learned so far to the test. Try to
-                recreate this web page using semantics and elements from the
-                previous lessons
-              </p>
-              <div class="container border border-dark">
-                <div class="row">
-                  <div class="col-12 border text-center"><h3>Header</h3></div>
-                  <div class="col-4 border">
-                    <ul>
-                      <li><a href="">nav link 1</a></li>
-                      <li><a href="">nav link 2</a></li>
-                      <li><a href="">nav link 3</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-8 border">article</div>
-                  <div class="border text-center">footer</div>
-                </div>
-              </div>
-              <p>Once done, click the button below to check your answer</p>
-              <a
-                class="btn signup_btn mt-5 w-100"
-                data-bs-toggle="collapse"
-                href="#semanticsHint"
-                role="button"
-                aria-expanded="false"
-                aria-controls="semanticsHint"
-              >
-                Show Answer
-              </a>
-              <div class="pb-5 pt-3 collapse" id="semanticsHint">
-                <p>If your code should look like this, good job!</p>
-                <img
-                  src="images/semanticsExerciseCode.JPG"
-                  alt=""
-                  class="img-fluid"
-                />
-                <p class="pt-5">And your document should look like this:</p>
-                <img
-                  src="images/semanticsExercise.JPG"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-              <div class="pt-3">
-                <p>
-                  You may be wondering why the result is different from the
-                  example. For our document to look better, we will be using an
-                  CSS to style the document. That will be an entirely new topic.
-                  Proceed to the next course to learn more!
-                </p>
-              </div>
             </div>
           </div>
-          <div class="d-flex justify-content-between py-5">
-            <a class="btn signup_btn" href="coursesHTMLForms.html">
-              Previous Topic
-            </a>
-            <a class="btn signup_btn" href="coursesCSSIntroduction.html">
-              Next Course
-            </a>
+          <div class="d-flex justify-content-end py-5">
+            <a class="btn signup_btn" href=""> Next Topic </a>
           </div>
         </main>
         <!-- main content end -->
@@ -493,12 +411,10 @@
               class="nav nav-pills flex-column p-3"
               style="border-left: solid gray 1px"
             >
-              <a class="nav-link m-0 ps-2 muted" href="#semanticsBenefit"
-                >Benefits of Semantics
+              <a class="nav-link m-0 ps-2 muted" href="#CSSDefinition"
+                >What is CSS
               </a>
-              <a class="nav-link m-0 ps-2" href="#semanticsList"
-                >Semantics Example</a
-              >
+              <a class="nav-link m-0 ps-2" href="#addingCSS">Adding CSS</a>
               <a class="nav-link m-0 ps-2" href="#example"
                 >Exercise: Build a website with semantics</a
               >

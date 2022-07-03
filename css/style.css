@@ -151,6 +151,9 @@
 .courseCardBody h5 {
   font-weight: 700;
 }
+.courseCardBody p {
+  font-size: medium;
+}
 .courseCardCTA a {
   font-weight: 700;
   text-decoration: none;

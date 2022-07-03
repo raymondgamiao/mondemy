@@ -252,15 +252,16 @@
                     <i class="fa-solid fa-angle-right"></i>
                     CSS
                   </a>
-                  <div class="collapse" id="css-collapse">
-                    <ul class="btn-toggle-nav list-unstyled ps-3">
-                      <li>
-                        <a href="#" class="sidebarActiveLink">Introduction</a>
+                  <div class="collapse show" id="css-collapse">
+                    <ul class="btn-toggle-nav list-unstyled ps-3 bg-light">
+                      <li class="sidebarActiveLink">
+                        <a href="coursesCSSIntroduction.html">Introduction</a>
                       </li>
-                      <li><a href="#" class="">Advanced</a></li>
-                      <li><a href="#" class="">Responsive</a></li>
-                      <li><a href="#" class="">Grid</a></li>
-                      <li><a href="#" class="">Flex</a></li>
+                      <li>
+                        <a href="coursesCSSResponsive.html" class=""
+                          >Responsive</a
+                        >
+                      </li>
                     </ul>
                   </div>
                 </li>
@@ -279,8 +280,6 @@
                     <ul class="btn-toggle-nav list-unstyled ps-3">
                       <li><a href="#" class="">Getting Started</a></li>
                       <li><a href="#" class="">Grid System</a></li>
-                      <li><a href="#" class="">Forms</a></li>
-                      <li><a href="#" class="">Components</a></li>
                     </ul>
                   </div>
                 </li>
@@ -298,8 +297,6 @@
                   <div class="collapse" id="javascript-collapse">
                     <ul class="btn-toggle-nav list-unstyled ps-3">
                       <li><a href="#" class="">Introduction</a></li>
-                      <li><a href="#" class="">Loops</a></li>
-                      <li><a href="#" class="">bla bla</a></li>
                     </ul>
                   </div>
                 </li>
@@ -386,14 +383,161 @@
               </ul>
             </div>
 
-            <div id="example" class="pt-5">
-              <h2 class="pt-5 pt-lg-0 mt-3 pb-3">
-                Excersize: Build your own website
-              </h2>
+            <div id="syntax" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3 pb-3">CSS Syntax</h2>
+              <p>
+                A CSS code is made up of selectors and declarations. And a
+                declaration is made up of property and value seperated by a
+                colon <code>:</code>. For a selector with multiple declaration,
+                you need to seperate each declaration with a semicolon
+                <code>;</code>
+              </p>
+              <p>
+                Take this block of code for example. The selector is
+                <code>p</code>, the property is <code>color</code>, and the
+                value is <code> red</code>
+              </p>
+              <p>
+                <code>
+                  p {<br />
+                  color: red; <br />
+                  } <br />
+                </code>
+              </p>
+              <p>
+                This CSS code will turn all
+                <code>&lt;p&gt; </code>elements in your webpage into red color
+              </p>
+            </div>
+
+            <div id="selector" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3 pb-3">CSS Selectors</h2>
+              <p>There are 5 types of CSS Selectors</p>
+              <table class="table table-striped">
+                <tr>
+                  <th>Type</th>
+                  <th>Definition</th>
+                  <th>Example</th>
+                </tr>
+                <tr>
+                  <td>Universal</td>
+                  <td>Selects all elements</td>
+                  <td><code>* {...}</code></td>
+                </tr>
+                <tr>
+                  <td>Type selector</td>
+                  <td>Selects all elements that have the given node name</td>
+                  <td><code>input {...}</code></td>
+                </tr>
+                <tr>
+                  <td>Class selector</td>
+                  <td>
+                    Selects all elements that have the given class attribute
+                  </td>
+                  <td><code>.classname {...}</code></td>
+                </tr>
+                <tr>
+                  <td>ID selector</td>
+                  <td>
+                    Selects an element based on the value of its id attribute.
+                    There should be only one element with a given ID in a
+                    document
+                  </td>
+                  <td><code>#idname {...}</code></td>
+                </tr>
+                <tr>
+                  <td>Attribute selector</td>
+                  <td>Selects all elements that have the given attribute.</td>
+                  <td><code> a[href*="example"]{...}</code></td>
+                </tr>
+              </table>
+            </div>
+
+            <div id="cssCheatSheet" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3 pb-3">Cheat sheet</h2>
+              <p>
+                There are HUNDREDS of CSS properties and even the best
+                developers cant memorize them all. So here is a handy guide from
+                <a
+                  href="https://websitesetup.org/css3-cheat-sheet/"
+                  target="_blank"
+                  >websitesetup.org</a
+                >
+                to help you
+              </p>
+
+              <embed
+                src="images/cssCheatSheet.pdf"
+                type="application/pdf"
+                style="height: 400px; width: 100%"
+              />
+            </div>
+
+            <div id="cssExercise" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3 pb-3">CSS Exercise</h2>
+              <p>
+                Take your HTML code from the previous code and let's add CSS to
+                it.
+              </p>
+              <p>For new learners, copy this code below</p>
+              <img
+                src="images/semanticsExerciseCode.JPG"
+                alt=""
+                class="img-fluid"
+              />
+              <p class="pt-3">
+                Now apply the following CSS. Feel Free to modify the values and
+                experiment.
+              </p>
+              <code>
+                * {<br />
+                margin: 0;<br />
+                font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida
+                Grande",<br />
+                "Lucida Sans Unicode", Geneva, Verdana, sans-serif;<br />
+                }<br />
+                header {<br />
+                background-color: aqua;<br />
+                padding: 10px;<br />
+                }<br />
+                h3 {<br />
+                text-align: center;<br />
+                font-size: 50px;<br />
+                }<br />
+                ul {<br />
+                text-align: center;<br />
+                background-color: #333;<br />
+                padding: 10px;<br />
+                }<br />
+                li {<br />
+                color: white;<br />
+                display: inline;<br />
+                padding: 10px;<br />
+                }<br />
+                a {<br />
+                text-decoration: none;<br />
+                color: rgb(255, 255, 255);<br />
+                }<br />
+                a:hover {<br />
+                color: #00f38e;<br />
+                }<br />
+                article {<br />
+                height: 200px;<br />
+                padding: 30px;<br />
+                }<br />
+                footer {<br />
+                background-color: #ccc;<br />
+                padding-top: 1rem;<br />
+                padding-bottom: 1em;<br />
+                text-align: center;<br />
+                }<br />
+              </code>
             </div>
           </div>
           <div class="d-flex justify-content-end py-5">
-            <a class="btn signup_btn" href=""> Next Topic </a>
+            <a class="btn signup_btn" href="coursesCSSResponsive.html">
+              Next Topic
+            </a>
           </div>
         </main>
         <!-- main content end -->
@@ -411,13 +555,12 @@
               class="nav nav-pills flex-column p-3"
               style="border-left: solid gray 1px"
             >
-              <a class="nav-link m-0 ps-2 muted" href="#CSSDefinition"
-                >What is CSS
-              </a>
+              <a class="nav-link m-0 ps-2" href="#CSSDefinition">What is CSS</a>
               <a class="nav-link m-0 ps-2" href="#addingCSS">Adding CSS</a>
-              <a class="nav-link m-0 ps-2" href="#example"
-                >Exercise: Build a website with semantics</a
-              >
+              <a class="nav-link m-0 ps-2" href="#syntax">CSS Syntax</a>
+              <a class="nav-link m-0 ps-2" href="#selector">CSS Selectors</a>
+              <a class="nav-link m-0 ps-2" href="#cssCheatSheet">Cheat sheet</a>
+              <a class="nav-link m-0 ps-2" href="#cssExercise">CSS Exercise</a>
             </nav>
           </nav>
         </aside>

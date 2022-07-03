@@ -212,25 +212,25 @@
               id="sidebar"
             >
               <ul class="sidebar-content list-unstyled w-100">
-                <li class="mb-1 sidebarActiveCategory">
+                <li class="mb-1">
                   <a
                     class="align-items-center"
                     data-bs-toggle="collapse"
                     data-bs-target="#html-collapse"
-                    aria-expanded="true"
+                    aria-expanded="false"
                     href="#"
                   >
                     <i class="fa-solid fa-angle-right"></i>
                     HTML
                   </a>
-                  <div class="collapse show" id="html-collapse">
+                  <div class="collapse" id="html-collapse">
                     <ul class="btn-toggle-nav list-unstyled ps-3 bg-light">
                       <li class="">
                         <a href="coursesHTMLIntroduction.html" class=""
                           >Introduction</a
                         >
                       </li>
-                      <li class="sidebarActiveLink">
+                      <li>
                         <a href="coursesHTMLForms.html" class="">Forms</a>
                       </li>
                       <li>
@@ -241,28 +241,28 @@
                     </ul>
                   </div>
                 </li>
-                <li class="mb-1">
+                <li class="mb-1 sidebarActiveCategory">
                   <a
                     class="align-items-center"
                     data-bs-toggle="collapse"
                     data-bs-target="#css-collapse"
-                    aria-expanded="false"
+                    aria-expanded="true"
                     href="#"
                   >
                     <i class="fa-solid fa-angle-right"></i>
                     CSS
                   </a>
-                  <div class="collapse" id="css-collapse">
-                    <ul class="btn-toggle-nav list-unstyled ps-3">
+                  <div class="collapse show" id="css-collapse">
+                    <ul class="btn-toggle-nav list-unstyled ps-3 bg-light">
                       <li>
-                        <a href="coursesCSSIntroduction.html" class=""
+                        <a
+                          href="coursesCSSIntroduction.html"
+                          class="sidebarActiveLink"
                           >Introduction</a
                         >
                       </li>
-                      <li>
-                        <a href="coursesCSSResponsive.html" class=""
-                          >Responsive</a
-                        >
+                      <li class="sidebarActiveLink">
+                        <a href="#" class="">Responsive</a>
                       </li>
                     </ul>
                   </div>
@@ -319,243 +319,132 @@
             tabindex="0"
           >
             <div class="py-5 py-sm-0">
-              <h1>HTML: Forms</h1>
-
+              <h1>Responsive Web Design</h1>
               <p>
-                The <code>&lt;form&gt;</code> HTML element represents a document
-                section containing interactive controls for submitting
-                information.
+                Desktops, tablets, and phones are just a few of the many devices
+                that may be used to access web sites. No matter the device, your
+                website should be appealing to the eye and simple to navigate.
               </p>
               <p>
-                An HTML form is used to collect user input. The user input is
-                most often sent to a server for processing.
+                When you use CSS and HTML to resize, hide, shrink, enlarge, or
+                relocate the content so that it looks nice on any screen, you
+                are using responsive web design.
               </p>
             </div>
-            <div id="attributes" class="pt-5">
-              <h2 class="pt-5 pt-lg-0 mt-3">Form Attributes</h2>
-              <table class="table table-striped">
-                <tr>
-                  <th>Attribute</th>
-                  <th>Definition</th>
-                </tr>
-                <tr>
-                  <td>Action</td>
-                  <td>
-                    defines the action to be performed when the form is
-                    submitted
-                  </td>
-                </tr>
-                <tr>
-                  <td>Method</td>
-                  <td>
-                    specifies the HTTP method to be used when submitting the
-                    form data. The default HTTP method when submitting form data
-                    is GET.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Autocomplete</td>
-                  <td>
-                    specifies whether a form should have autocomplete on or off
-                  </td>
-                </tr>
-                <tr>
-                  <td>Novalidate</td>
-                  <td>
-                    When present, it specifies that the form-data (input) should
-                    not be validated when submitted.
-                  </td>
-                </tr>
-                <tr>
-                  <td>rel</td>
-                  <td>
-                    Specifies the relationship between a linked resource and the
-                    current document
-                  </td>
-                </tr>
-                <tr>
-                  <td>target</td>
-                  <td>
-                    Specifies where to display the response that is received
-                    after submitting the form
-                  </td>
-                </tr>
-              </table>
+            <div id="viewport" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">Viewports</h2>
+              <p>
+                A viewport represents the area in webpage visible to the user.
+                In web browser terms, it is generally the same as the browser
+                window, not including menu bar and the browser UI.
+              </p>
+              <ul>
+                <li>
+                  On larger monitors where applications aren't necessarily full
+                  screen, the viewport is the size of the browser window.
+                </li>
+                <li>
+                  On most mobile devices and when the browser is in fullscreen
+                  mode, the viewport is the entire screen.
+                </li>
+                <li>
+                  In fullscreen mode, the viewport is the device screen, the
+                  window is the browser window, which can be as big as the
+                  viewport or smaller, and the document is the website, which
+                  can be much taller or wider than the viewport.
+                </li>
+              </ul>
+              <p>
+                To set the viewport, include the following code to your HTML
+                head:
+              </p>
+              <code
+                >&lt;meta name="viewport" content="width=device-width,
+                initial-scale=1.0" /&gt;</code
+              >
             </div>
-
-            <div id="elements" class="pt-5">
-              <h2 class="pt-5 pt-lg-0 mt-3">Form Elements</h2>
+            <div id="mediaQuery" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">Media Queries</h2>
               <p>
-                The HTML &lt;form&gt; element can contain one or more of the
-                following form elements:
+                Media query is a CSS technique introduced in CSS3. It uses the
+                @media rule to include a block of CSS properties only if a
+                certain condition is true.
               </p>
-              <table class="table table-striped">
-                <tr>
-                  <th>Element</th>
-                  <th>Definition</th>
-                </tr>
-                <tr>
-                  <td>&lt;button&gt;</td>
-                  <td>
-                    is an interactive element activated by a user with a mouse,
-                    keyboard, finger, voice command, or other assistive
-                    technology. Once activated, it then performs a programmable
-                    action, such as submitting a form or opening a dialog.
-                  </td>
-                </tr>
-                <tr>
-                  <td>&lt;datalist&gt;</td>
-                  <td>
-                    contains a set of option elements that represent the
-                    permissible or recommended options available to choose from
-                    within other controls.
-                  </td>
-                </tr>
-                <tr>
-                  <td>&lt;fieldset&gt;</td>
-                  <td>
-                    is used to group several controls as well as labels (label)
-                    within a web form.
-                  </td>
-                </tr>
-                <tr>
-                  <td>&lt;input&gt;</td>
-                  <td>
-                    element is used to create interactive controls for web-based
-                    forms in order to accept data from the user; a wide variety
-                    of types of input data and control widgets are available,
-                    depending on the device and user agent. The &lt;input /&gt;
-                    element is one of the most powerful and complex in all of
-                    HTML due to the sheer number of combinations of input types
-                    and attributes.
-                  </td>
-                </tr>
-                <tr>
-                  <td>&lt;label&gt;</td>
-                  <td>represents a caption for an item in a user interface.</td>
-                </tr>
-                <tr>
-                  <td>&lt;legend&gt;</td>
-                  <td>
-                    represents a caption for the content of its parent fieldset.
-                  </td>
-                </tr>
-                <tr>
-                  <td>&lt;optgroup&gt;</td>
-                  <td>
-                    creates a grouping of options within a select element.
-                  </td>
-                </tr>
-                <tr>
-                  <td>&lt;option&gt;</td>
-                  <td>
-                    is used to define an item contained in a select, an
-                    optgroup, or a datalist element. As such, &lt;option&gt; can
-                    represent menu items in popups and other lists of items in
-                    an HTML document.
-                  </td>
-                </tr>
-                <tr>
-                  <td>&lt;select&gt;</td>
-                  <td>represents a control that provides a menu of options.</td>
-                </tr>
-                <tr>
-                  <td>&lt;textarea&gt;</td>
-                  <td>
-                    represents a multi-line plain-text editing control, useful
-                    when you want to allow users to enter a sizeable amount of
-                    free-form text, for example a comment on a review or
-                    feedback form.
-                  </td>
-                </tr>
-              </table>
+              <p>
+                Media queries are useful when you want to modify your site
+                depending on a device's general type (such as print vs. screen)
+                or specific characteristics and parameters (such as screen
+                resolution or browser viewport width).
+              </p>
+              <p>
+                <code>
+                  @media only screen and (max-width: 768px) {<br />
+                  &nbsp; #someDiv {<br />
+                  &nbsp; &nbsp; display: none;<br />
+                  &nbsp;&nbsp;} <br />
+                  } <br />
+                </code>
+              </p>
+              <p>
+                The above code will change the element with id of "someDiv"'s
+                display property to none if the screen size is 600px wide or
+                less, thus hiding the div
+              </p>
             </div>
+            <div id="images" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">Responsive Images</h2>
+              <p>
+                Images are important part of any web pages. They can improve the
+                design and the appearance of a web page. To make them responsive
+                and look good in any viewport, simply add the following CSS:
+              </p>
+              <p>
+                <code>
+                  img {<br />
+                  width: 100%;<br />
+                  height: auto;<br />
+                  }
+                </code>
+              </p>
+              <p>
+                The above code will make the images fit the containers width and
+                its height will adjust proportionally
+              </p>
+            </div>
+            <div id="exercise" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">Exercise</h2>
+              <p class="py-3">
+                Using What you have learned so far, try changing the orientation
+                and position of the navigation when the screen size is less than
+                600px
+              </p>
+              <img
+                src="images/responsive exercise.jpg"
+                alt=""
+                class="img-fluid w-100"
+              />
 
-            <div id="example" class="pt-5">
-              <h2 class="pt-5 pt-lg-0 mt-3 pb-3">Form Example</h2>
-              <p>
-                Using the elements that youve learned, try and recreate the form
-                below. Remember to put your code inside the
-                <code>&lt;body&gt; &lt;/body&gt; </code> tag
-              </p>
-              <p>
-                If you get stuck, dont worry. You can click the "show answer"
-                button anytime.
-              </p>
-              <div class="p-3 bg-light border border-dark">
-                <form action="">
-                  <fieldset>
-                    <legend>Legend for the fieldset</legend>
-                    <label for="inputText"
-                      >This is a label for input[text]:</label
-                    ><br />
-                    <input
-                      type="text"
-                      id="fname"
-                      name="inputText"
-                      placeholder="this is an input with a type of 'text'"
-                      class="w-100"
-                    /><br /><br />
-                    <button class="p-1">this is a button</button>
-                  </fieldset>
-                  <br />
-                  <input
-                    list="lists"
-                    name="list"
-                    id="list"
-                    placeholder="click me for the datalist"
-                  />
-                  <datalist id="lists">
-                    <option value="list option 1"></option>
-                    <option value="list option 2"></option>
-                    <option value="list option 3"></option>
-                    <option value="list option 4"></option>
-                    <option value="list option 5"></option>
-                  </datalist>
-                  <br /><br />
-                  <label for="optgroup"
-                    >This is a select element with optgroups:</label
-                  ><br />
-                  <select name="optgroup" id="optgroup" class="p-1">
-                    <optgroup label="optgroup1">
-                      <option value="option 1">option 1</option>
-                      <option value="option 2">option 2</option>
-                    </optgroup>
-                    <optgroup label="optgroup1">
-                      <option value="option 3">option 3</option>
-                      <option value="option 4">option 4</option>
-                    </optgroup></select
-                  ><br /><br />
-                  <textarea
-                    name=""
-                    class="w-100"
-                    rows="3"
-                    placeholder="this is a textarea with 3 rows"
-                  ></textarea>
-                </form>
-              </div>
               <a
                 class="btn signup_btn mt-5 w-100"
                 data-bs-toggle="collapse"
-                href="#formHint"
+                href="#responsiveHint"
                 role="button"
                 aria-expanded="false"
                 aria-controls="formHint"
               >
                 Show Answer
               </a>
-              <div class="pb-5 collapse" id="formHint">
-                <img src="images/basicFormCode.JPG" alt="" class="img-fluid" />
+              <div class="pb-5 collapse" id="responsiveHint">
+                <img
+                  src="images/responsive exercise hint.jpg"
+                  alt=""
+                  class="img-fluid w-100"
+                />
               </div>
             </div>
           </div>
-          <div class="d-flex justify-content-between py-5">
-            <a class="btn signup_btn" href="coursesHTMLForms.html">
-              Previous Topic
-            </a>
-            <a class="btn signup_btn" href="coursesHTMLSemantics.html">
-              Next Topic
-            </a>
+          <div class="d-flex justify-content-end py-5">
+            <a class="btn signup_btn" href=""> Next Topic </a>
           </div>
         </main>
         <!-- main content end -->
@@ -573,11 +462,10 @@
               class="nav nav-pills flex-column p-3"
               style="border-left: solid gray 1px"
             >
-              <a class="nav-link m-0 ps-2 muted" href="#attributes"
-                >Form Attributes
-              </a>
-              <a class="nav-link m-0 ps-2" href="#elements">Form Elements</a>
-              <a class="nav-link m-0 ps-2" href="#example">Form Example</a>
+              <a class="nav-link m-0 ps-2" href="#viewport">Viewports</a>
+              <a class="nav-link m-0 ps-2" href="#mediaQuery">Media Queries</a>
+              <a class="nav-link m-0 ps-2" href="#images">Responsive Images</a>
+              <a class="nav-link m-0 ps-2" href="#exercise">Exercise</a>
             </nav>
           </nav>
         </aside>

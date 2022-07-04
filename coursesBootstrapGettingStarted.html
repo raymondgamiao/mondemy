@@ -241,19 +241,19 @@
                     </ul>
                   </div>
                 </li>
-                <li class="mb-1 sidebarActiveCategory">
+                <li class="mb-1">
                   <a
                     class="align-items-center"
                     data-bs-toggle="collapse"
                     data-bs-target="#css-collapse"
-                    aria-expanded="true"
+                    aria-expanded="false"
                     href="#"
                   >
                     <i class="fa-solid fa-angle-right"></i>
                     CSS
                   </a>
-                  <div class="collapse show" id="css-collapse">
-                    <ul class="btn-toggle-nav list-unstyled ps-3 bg-light">
+                  <div class="collapse" id="css-collapse">
+                    <ul class="btn-toggle-nav list-unstyled ps-3">
                       <li>
                         <a
                           href="coursesCSSIntroduction.html"
@@ -261,26 +261,28 @@
                           >Introduction</a
                         >
                       </li>
-                      <li class="sidebarActiveLink">
-                        <a href="#" class="">Responsive</a>
+                      <li>
+                        <a href="coursesCSSResponsive.html" class=""
+                          >Responsive</a
+                        >
                       </li>
                     </ul>
                   </div>
                 </li>
-                <li class="mb-1">
+                <li class="mb-1 sidebarActiveCategory">
                   <a
                     class="align-items-center"
                     data-bs-toggle="collapse"
                     data-bs-target="#bootstrap-collapse"
-                    aria-expanded="false"
+                    aria-expanded="true"
                     href="#"
                   >
                     <i class="fa-solid fa-angle-right"></i>
                     Bootstrap
                   </a>
-                  <div class="collapse" id="bootstrap-collapse">
-                    <ul class="btn-toggle-nav list-unstyled ps-3">
-                      <li>
+                  <div class="collapse show" id="bootstrap-collapse">
+                    <ul class="btn-toggle-nav list-unstyled ps-3 bg-light">
+                      <li class="sidebarActiveLink">
                         <a href="coursesBootstrapGettingStarted.html" class=""
                           >Getting Started</a
                         >
@@ -310,132 +312,208 @@
             tabindex="0"
           >
             <div class="py-5 py-sm-0">
-              <h1>Responsive Web Design</h1>
+              <h1>Bootstrap 5: Getting Started</h1>
               <p>
-                Desktops, tablets, and phones are just a few of the many devices
-                that may be used to access web sites. No matter the device, your
-                website should be appealing to the eye and simple to navigate.
+                Bootstrap is a free, open source HTML, CSS, and JavaScript
+                framework. It is the world's most popular framework for building
+                responsive, mobile-first sites.
               </p>
               <p>
-                When you use CSS and HTML to resize, hide, shrink, enlarge, or
-                relocate the content so that it looks nice on any screen, you
-                are using responsive web design.
+                In this course, we will be learning Bootstrap 5 (released 2021)
+                which is the newest version of Bootstrap (released 2013)
+              </p>
+              <p>
+                We will only be discussing the basics on this course. For an
+                exhaustive guide and full documentaion, go to Bootstrap's
+                <a
+                  href="https://getbootstrap.com/docs/5.2/getting-started/introduction/"
+                  target="_blank"
+                  >official site</a
+                >.
               </p>
             </div>
-            <div id="viewport" class="pt-5">
-              <h2 class="pt-5 pt-lg-0 mt-3">Viewports</h2>
+            <div id="gettingStarted" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">How to add Bootstrap</h2>
               <p>
-                A viewport represents the area in webpage visible to the user.
-                In web browser terms, it is generally the same as the browser
-                window, not including menu bar and the browser UI.
+                Bootstrap is very easyo install. All you need to do is copy the
+                following codes into your html file
+              </p>
+
+              <p>
+                Add this line of code inside your
+                <code>&lt;head&gt;</code> element: <br />
+                <code>
+                  &lt;link
+                  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+                  rel="stylesheet"&gt/
+                </code>
+              </p>
+              <p>
+                And then add this Javascript link just before the closing tag of
+                you <code>&lt;/body&gt;</code>:<br />
+                <code>
+                  &lt;script
+                  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                </code>
+              </p>
+              <p>
+                Note: add the tag <code> &lt;meta name="viewport&gt; </code> to
+                ensure proper rendering and touch zooming
+              </p>
+            </div>
+            <div id="supportedBrowsers" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">Supported Browsers</h2>
+              <p>
+                Bootstrap supports the latest, stable releases of all major
+                browsers and platforms. Generally speaking, Bootstrap supports
+                the latest versions of each major platform’s default browsers.
+                Note that proxy browsers (such as Opera Mini, Opera Mobile’s
+                Turbo mode, UC Browser Mini, Amazon Silk) are not supported.
+              </p>
+              <h4 class="pt-4">Mobile devices</h4>
+              <div class="table-responsive-md">
+                <table class="table table-striped table-sm table-responsive">
+                  <tr>
+                    <th></th>
+                    <th>Chrome</th>
+                    <th>Firefox</th>
+                    <th>Safari</th>
+                    <th>Android Browser & WebView</th>
+                  </tr>
+                  <tr>
+                    <th>Android</th>
+                    <td>Supported</td>
+                    <td>Supported</td>
+                    <td>—</td>
+                    <td>v6.0+</td>
+                  </tr>
+                  <tr>
+                    <th>Windows</th>
+                    <td>Supported</td>
+                    <td>Supported</td>
+                    <td>Supported</td>
+                    <td>—</td>
+                  </tr>
+                </table>
+              </div>
+
+              <h4 class="pt-5">Desktop browsers</h4>
+              <div class="table-responsive-md">
+                <table class="table table-responsive">
+                  <tr>
+                    <th></th>
+                    <th>Chrome</th>
+                    <th>Firefox</th>
+                    <th>Microsoft Edge</th>
+                    <th>Opera</th>
+                    <th>Safari</th>
+                  </tr>
+                  <tr>
+                    <th>Mac</th>
+                    <td>Supported</td>
+                    <td>Supported</td>
+                    <td>Supported</td>
+                    <td>Supported</td>
+                    <td>Supported</td>
+                  </tr>
+                  <tr>
+                    <th>Windows</th>
+                    <td>Supported</td>
+                    <td>Supported</td>
+                    <td>Supported</td>
+                    <td>Supported</td>
+                    <td>—</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div id="breakpoints" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">Breakpoints</h2>
+              <p>
+                In Bootstrap, breakpoints are adjustable widths that control how
+                your responsive layout functions on various devices or viewport
+                sizes.
               </p>
               <ul>
                 <li>
-                  On larger monitors where applications aren't necessarily full
-                  screen, the viewport is the size of the browser window.
+                  The fundamental components of responsive design are
+                  breakpoints.
                 </li>
+                <li>To design your CSS by breakpoint, use media queries.</li>
                 <li>
-                  On most mobile devices and when the browser is in fullscreen
-                  mode, the viewport is the entire screen.
-                </li>
-                <li>
-                  In fullscreen mode, the viewport is the device screen, the
-                  window is the browser window, which can be as big as the
-                  viewport or smaller, and the document is the website, which
-                  can be much taller or wider than the viewport.
+                  The objective is to use responsive, mobile-first design.
                 </li>
               </ul>
-              <p>
-                To set the viewport, include the following code to your HTML
-                head:
-              </p>
-              <code
-                >&lt;meta name="viewport" content="width=device-width,
-                initial-scale=1.0" /&gt;</code
-              >
-            </div>
-            <div id="mediaQuery" class="pt-5">
-              <h2 class="pt-5 pt-lg-0 mt-3">Media Queries</h2>
-              <p>
-                Media query is a CSS technique introduced in CSS3. It uses the
-                @media rule to include a block of CSS properties only if a
-                certain condition is true.
-              </p>
-              <p>
-                Media queries are useful when you want to modify your site
-                depending on a device's general type (such as print vs. screen)
-                or specific characteristics and parameters (such as screen
-                resolution or browser viewport width).
-              </p>
-              <p>
-                <code>
-                  @media only screen and (max-width: 768px) {<br />
-                  &nbsp; #someDiv {<br />
-                  &nbsp; &nbsp; display: none;<br />
-                  &nbsp;&nbsp;} <br />
-                  } <br />
-                </code>
-              </p>
-              <p>
-                The above code will change the element with id of "someDiv"'s
-                display property to none if the screen size is 600px wide or
-                less, thus hiding the div
-              </p>
-            </div>
-            <div id="images" class="pt-5">
-              <h2 class="pt-5 pt-lg-0 mt-3">Responsive Images</h2>
-              <p>
-                Images are important part of any web pages. They can improve the
-                design and the appearance of a web page. To make them responsive
-                and look good in any viewport, simply add the following CSS:
-              </p>
-              <p>
-                <code>
-                  img {<br />
-                  width: 100%;<br />
-                  height: auto;<br />
-                  }
-                </code>
-              </p>
-              <p>
-                The above code will make the images fit the containers width and
-                its height will adjust proportionally
-              </p>
-            </div>
-            <div id="exercise" class="pt-5">
-              <h2 class="pt-5 pt-lg-0 mt-3">Exercise</h2>
-              <p class="py-3">
-                Using What you have learned so far, try changing the orientation
-                and position of the navigation when the screen size is less than
-                600px
-              </p>
-              <img
-                src="images/responsive exercise.jpg"
-                alt=""
-                class="img-fluid w-100"
-              />
-
-              <a
-                class="btn signup_btn mt-5 w-100"
-                data-bs-toggle="collapse"
-                href="#responsiveHint"
-                role="button"
-                aria-expanded="false"
-                aria-controls="formHint"
-              >
-                Show Answer
-              </a>
-              <div class="pb-5 collapse" id="responsiveHint">
-                <img
-                  src="images/responsive exercise hint.jpg"
-                  alt=""
-                  class="img-fluid w-100"
-                />
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <tr>
+                    <th>Breakpoint</th>
+                    <th>Class infix</th>
+                    <th>Dimensions</th>
+                  </tr>
+                  <tr>
+                    <td>Extra small</td>
+                    <td>None</td>
+                    <td>&lt;576px</td>
+                  </tr>
+                  <tr>
+                    <td>Small</td>
+                    <td>sm</td>
+                    <td>&ge;576px</td>
+                  </tr>
+                  <tr>
+                    <td>Medium</td>
+                    <td>md</td>
+                    <td>&ge;768px</td>
+                  </tr>
+                  <tr>
+                    <td>Large</td>
+                    <td>lg</td>
+                    <td>&ge;992px</td>
+                  </tr>
+                  <tr>
+                    <td>Extra large</td>
+                    <td>xl</td>
+                    <td>&ge;1200px</td>
+                  </tr>
+                  <tr>
+                    <td>Extra extra large</td>
+                    <td>xxl</td>
+                    <td>&ge;1400px</td>
+                  </tr>
+                </table>
               </div>
+            </div>
+            <div id="container" class="pt-5">
+              <h2 class="pt-5 pt-lg-0 mt-3">Containers</h2>
+              <p>
+                Containers are the most fundamental Bootstrap layout component
+                and are necessary when using its built-in grid system. The
+                purpose of containers is to contain, center, and occasionally
+                pad the content they contain. Although containers can be nested,
+                most layouts don't require for them.
+              </p>
+              <p>There are 3 types of bootstrap containers:</p>
+              <ul>
+                <li>
+                  <code>.container</code> - provides a responsive fixed width
+                  container
+                </li>
+                <li>
+                  <code>.container-{breakpoint}</code> - provides a responsive
+                  fixed width container depending on the specified breakpoint
+                </li>
+                <li>
+                  <code>.container-fluid</code> - provides a full width
+                  container, spanning the entire width of the viewport
+                </li>
+              </ul>
             </div>
           </div>
           <div class="d-flex justify-content-end py-5">
-            <a class="btn signup_btn" href=""> Next Topic </a>
+            <a class="btn signup_btn" href="coursesBootstrapGridSystem.html">
+              Next Topic
+            </a>
           </div>
         </main>
         <!-- main content end -->
@@ -453,10 +531,14 @@
               class="nav nav-pills flex-column p-3"
               style="border-left: solid gray 1px"
             >
-              <a class="nav-link m-0 ps-2" href="#viewport">Viewports</a>
-              <a class="nav-link m-0 ps-2" href="#mediaQuery">Media Queries</a>
-              <a class="nav-link m-0 ps-2" href="#images">Responsive Images</a>
-              <a class="nav-link m-0 ps-2" href="#exercise">Exercise</a>
+              <a class="nav-link m-0 ps-2" href="#gettingStarted"
+                >How to add Bootstrap</a
+              >
+              <a class="nav-link m-0 ps-2" href="#supportedBrowsers"
+                >Supported Browsers</a
+              >
+              <a class="nav-link m-0 ps-2" href="#breakpoints">Breakpoints</a>
+              <a class="nav-link m-0 ps-2" href="#container">Containers</a>
             </nav>
           </nav>
         </aside>

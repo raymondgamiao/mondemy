@@ -182,6 +182,23 @@
   background-color: #0f1821;
   color: white;
 }
+.footer a {
+  color: white;
+}
+.socials i {
+  font-size: small;
+}
+.socials a {
+  background-color: white;
+  color: #6c63ff;
+
+  margin: 0 5px;
+}
+.socials a:hover {
+  background-color: #6c63ff;
+  color: white;
+  border-color: #6c63ff;
+}
 /* dashboard */
 .loadMoreBtn {
   border: solid 1px #6c63ff;
